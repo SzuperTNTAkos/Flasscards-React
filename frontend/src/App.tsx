@@ -3,12 +3,14 @@ import { RouterProvider, Route, createBrowserRouter, createRoutesFromElements } 
 import MainTemplate from './templates/MainTemplate.tsx';
 import Home from './pages/Home.tsx';
 import Create from './pages/Create';
+import Login from './pages/Login.tsx';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element={<MainTemplate />}>
       <Route path='home' element={<Home />} />
       <Route path='create' element={<Create />} />
+      <Route path='login' element={<Login />} />
     </Route>
   )
 )
